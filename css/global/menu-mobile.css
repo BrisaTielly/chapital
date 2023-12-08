@@ -1,0 +1,66 @@
+header {
+}
+
+[data-menu="nav"] {
+  padding: 12px;
+}
+
+.hamburguer {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: none;
+  /* background-color: #f0bca48a; */
+}
+
+.hamburguer button {
+  padding: 0px;
+  position: relative;
+}
+
+.hamburguer:hover {
+  background-color: #eac9ba8a;
+  transition: 0.3s;
+}
+
+.hamburguer::before {
+  content: "";
+  background-color: black;
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  box-shadow: 0 6px black, 0 -6px black;
+  margin: 12px 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .js .menu-hamburguer {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  [data-dropdown] ul {
+    position: static;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .js .menu-hamburguer {
+    position: absolute;
+    right: 0;
+    border: 2px solid #efdfd8;
+    background-color: #ffffff;
+    padding: 12px 32px;
+    border-radius: 4px;
+  }
+  .js .menu-hamburguer.active {
+    display: block;
+  }
+}

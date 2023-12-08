@@ -1,0 +1,94 @@
+.button-dois {
+  background-color: #f0bca4;
+  display: inline-block;
+  margin: 24px 0px;
+}
+
+.button-dois:hover {
+  background-color: #ebd0c4;
+  color: #45352d;
+}
+
+.artigo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.artigo h2,
+.titulo {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #30252a;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.artigo .deco-line {
+  width: 200px;
+  height: 2px;
+  background-color: #f0bca4;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.artigo .deco-line::after {
+  border-color: white;
+}
+
+.artigo h3,
+.subtexto {
+  font-weight: 600;
+  color: #f0bca4;
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.artigo p + p {
+  margin-top: 24px;
+}
+
+.artigo img {
+  width: 440px;
+}
+
+.artigo-div {
+  max-width: 550px;
+}
+
+@media (max-width: 940px) {
+  .artigo {
+    grid-template-columns: 1fr;
+  }
+  .artigo div {
+    place-self: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .artigo div img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 320px) {
+  .artigo h2 {
+    font-size: 2rem;
+  }
+
+  .artigo p {
+    font-size: 0.9rem;
+  }
+
+  .produtos-bg {
+    margin-bottom: 32px;
+  }
+
+  .produtos {
+    padding-bottom: 0px;
+  }
+}

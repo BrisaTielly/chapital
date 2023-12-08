@@ -1,0 +1,119 @@
+.vantagens-bg {
+  background: url(../../images/background3.jpg);
+  background-size: cover;
+  /* background-color: #f0bca4; */
+  padding-top: 42px;
+  padding-bottom: 64px;
+}
+
+.vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.vantagens h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #30252a;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.span-deco {
+  color: #ffffff;
+  text-shadow: 0 0 rgb(201, 201, 201);
+}
+
+.vantagens h3 {
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 32px;
+  line-height: 1.3;
+  text-shadow: 0 0 black;
+}
+
+.vantagens ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 42px;
+  gap: 0px 16px;
+  color: #30252a;
+}
+
+.vantagens li {
+  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  margin-left: 0px;
+  display: inline-block;
+}
+
+.vantagens-c2 {
+  display: flex;
+  place-content: center;
+}
+
+.play {
+  background-color: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  place-self: center;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.play img {
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+}
+
+@media (max-width: 880px) {
+  .vantagens {
+    grid-template-columns: 1fr;
+    gap: 72px;
+    max-width: 600px;
+  }
+  .button-tres {
+    padding: 16px 38px;
+  }
+}
+
+@media (max-width: 350px) {
+  .vantagens {
+    gap: 48px;
+  }
+
+  .vantagens h2 {
+    font-size: 2rem;
+  }
+
+  .vantagens h3 {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+  .vantagens ul {
+    grid-template-columns: 1fr;
+    margin-bottom: 16px;
+  }
+
+  .play {
+    width: 100px;
+    height: 100px;
+  }
+
+  .play img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+}

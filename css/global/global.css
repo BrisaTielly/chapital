@@ -1,0 +1,35 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+a,
+ul {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  padding: 16px 58px;
+  margin: 0 auto;
+  max-width: 1200px;
+}

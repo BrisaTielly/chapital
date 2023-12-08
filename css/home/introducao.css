@@ -1,0 +1,92 @@
+.introducao-bg {
+  background-image: url(../../images/background2.jpg);
+  background-size: cover;
+  padding: 48px 0px;
+  margin-bottom: 64px;
+}
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  gap: 28px;
+}
+
+.introducao h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  font-family: "playfair display";
+  color: #333333;
+  text-align: center;
+}
+
+.introducao p {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.introducao span {
+  color: #333333;
+}
+
+.button {
+  font-size: 1rem;
+  color: #333333;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  background-color: #ffffff;
+  padding: 16px 32px;
+  margin: 10px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  background-color: #333333;
+  color: #ffffff;
+  transition: 0.5s;
+  padding: 16px 34px;
+  box-shadow: rgb(51 51 51) 0px 7px 29px 0px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1000px) {
+  .introducao {
+    gap: 24px;
+  }
+
+  .introducao h1 {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+
+  .button {
+    padding: 12px 24px;
+  }
+
+  .introducao {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+
+  .introducao-bg {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+
+  .introducao p {
+    font-size: 1.1rem;
+  }
+}

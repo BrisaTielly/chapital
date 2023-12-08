@@ -1,0 +1,74 @@
+.js-art-images img {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate3d(-50px, 0, 0);
+  overflow-x: hidden;
+}
+
+.js-art-images img.ativo {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.js-info {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate3d(50px, 0, 0);
+  overflow-x: hidden;
+}
+
+.js-info.ativo {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translate3d(0px, 0px, 0px);
+  overflow: hidden;
+}
+
+.slide-imagens {
+  overflow-y: hidden;
+}
+
+.slide-imagens li {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate3d(0px, 100px, 0px);
+}
+
+.slide-imagens li.ativo {
+  opacity: 1;
+  transition: 0.4s;
+  transform: translate3d(0px, 0px, 0px);
+  overflow-y: hidden;
+}
+
+.js-artigos div {
+  opacity: 0;
+}
+
+.js-artigos div.ativo {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.js-store {
+  opacity: 0;
+  transform: translate3d(0px, 70px, 0px);
+}
+
+.js-store.ativo {
+  opacity: 1;
+  transition: 0.4s;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.js-store-div li {
+  opacity: 0;
+  transform: translate3d(0px, 100px, 0px);
+}
+
+.js-store-div li.ativo {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate3d(0px, 0px, 0px);
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.className += " js";
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <title>Tea House</title>
+</head>
+<body>
+  <header class="menu-primario container">
+    <div class="menu-primario-logo" >
+      <img src="./images/Logotype Boutique Fashion Neon Logomark logo (1).png" alt="logo" width="100px" >
+    </div>
+    <nav data-menu="nav" >
+      <button class="hamburguer" data-menu="hamburguer" ></button>
+      <ul data-menu="ul" class="menu-hamburguer">
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#sobre">Sobre</a></li>
+        <li data-dropdown> 
+          <a href="#produtos">Produtos</a>
+          <ul class="dropdown-menu">
+            <li> <a href="#loja">Chá Orgânico</a></li>
+            <li> <a href="#loja">Chá Verde</a></li>
+            <li> <a href="#loja">Chá Apimentado</a></li>
+          </ul>
+        </li>
+        <li> <a href="#loja">Loja</a></li>
+        <li> <a href="#paginas">Páginas</a></li>
+        <li> <a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="introducao-bg" id="home">
+    <div class=" introducao container">
+      <p>Bem vindo a <span> Tea House</span></p>
+      <h1>Chá orgânico  de qualidade</h1>
+      <a class="button" href="">Explore mais</a>
+    </div>
+  </main>
+
+  <section class="about container" id="sobre">
+    <div class="about-images js-art-images">
+    
+   <div class="about-bloco">
+      <img class="imagem1" src="./images/tea3.jpg" alt="">
+      <img class="imagem2" src="./images/tea2.jpg" alt="">
+    </div>   
+
+    <div class="about-bloco">
+      <img class="imagem3" src="./images/tea4.jpg" alt="" >
+      <img class="imagem4" src="./images/tea1.jpg" alt="" >
+    </div>
+  </div>
+
+    <div class="about-info js-info">
+        <div class="about-info-tittle">
+          <p class="sobre-nos">Sobre Nós</p>
+          <h2>A história de sucesso da TeaHouse em 25 anos</h2>
+        </div>
+
+      <article class="about-info-art bloco-um line js-info">
+        <img src="./images/teste.jpg" alt="" width="170px" height="110px">
+        <div>
+          <h3>Nosso chá é uma das bebidas mais populares no mundo</h3>
+          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</p>
+        </div>
+      </article>
+
+      <article class="about-info-art bloco-dois js-info">
+        <img src="./images/insumo2.jpg" alt="" width="170px" height="110px">
+          <div>
+            <h3>O uso diário de uma xícara de chá faz bem à saúde</h3>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</p>
+        </div>
+      </article>
+    </div>
+
+  
+
+
+  </section>
+
+  <section class="produtos-bg" id="produtos">
+    <div class="produtos container">
+      <p class="produtosp">Nossos Produtos</p>
+      <h2>O chá tem um efeito positivo complexo no corpo</h2>
+      <span class="deco-line"></span>
+
+      <div class="produtos-slide js-slide">
+        <ul class="slide-imagens">
+          <li>
+            <img src="./images/Slide_tea1.jpg" alt="" width="350px" height="230px">
+            <div>
+              <h3>Chá orgânico</h3>
+              <p>Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="./images/Slide_tea2.jpg" alt="" width="350px" height="230px">
+            <div>
+              <h3>Chá verde</h3>
+              <p>Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="./images/Slide_tea3.jpg" alt="" width="350px" height="230px">
+            <div>
+              <h3>Chá apimentado</h3>
+              <p>Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum</p>
+            </div>
+          </li>
+
+
+        </ul>
+
+
+      </div>
+
+
+    </div>
+  </section>
+  
+  <section class="artigo container js-artigos" id="paginas">
+    <div>
+      <img src="./images/pink_plant.jpg" alt="">
+    </div>
+
+    <div class="artigo-div">
+      <h3>Artigo em destaque</h3>
+      <h2>A história da folha de chá no mundo</h2>
+      <span class="deco-line"></span>
+      <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+      <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna. Tempor erat elitr rebum at clita.
+      </p>
+      <a class="button button-dois" href="">Leia Mais</a>
+    </div>
+  </section>
+
+  <article class="vantagens-bg">
+    <div class="vantagens container">
+      <div class="vantagens-c1">
+        <h2>Chá é uma bebida de <span class="span-deco"> saúde</span> e  <span class="span-deco"> beleza</span></h2>
+        <h3>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</h3>
+        <ul>
+          <li>
+            <img src="./images/checkbox.svg" alt="">
+            <p> Grande variedade de chás</p>
+          </li>
+
+          <li>
+            <img src="./images/checkbox.svg" alt="">
+            <p>Acessórios únicos</p>
+          </li>
+
+          <li>
+            <img src="./images/checkbox.svg" alt="">
+            <p>Especiarias e aditivos</p> 
+          </li>
+
+          <li>
+            <img src="./images/checkbox.svg" alt="">
+            <p>Bom para saúde e beleza</p>
+          </li>
+        </ul>
+        <a class="button button-tres" href="">Explore Mais</a>
+      </div>
+
+      <div class="vantagens-c2">
+        <a class="vantagens-c2" href="https://youtu.be/KfDTuNyup9Y?si=7_oNTo2-9f9-R_Ud" target="_blank">
+        <div class="play"> <img src="./images/play_button.svg" alt=""> </div>
+      </a>
+      </div>
+
+    </div>
+  </article>
+
+  <section class="store container" id="loja">
+   <div class="store js-store">
+    <h3 class="subtexto">Loja Online</h3>
+    <h2 class="titulo">Escolha um sabor de Chá</h2>
+    <span class="deco-line"></span>
+  </div>  
+
+ 
+      <ul class="store-div js-store-div" >
+        <li>
+          <img class="store-product" src="./images/store-product-1-removebg-preview.png" alt="">
+          <img src="./images/stars.svg" width="110px" alt="">
+          <h3>Nature close tea</h3>
+          <p>Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum orem sit sed</p>
+          <span>$19.00</span>
+          
+       </li>
+
+        <li>
+          <img class="store-product" src="./images/store-product-2-removebg-preview.png" alt="">
+          <img src="./images/stars.svg" width="110px" alt="">
+          <h3>Nature close tea</h3>
+          <p>Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum orem sit sed</p>
+          <span>$19.00</span>
+       </li>
+
+        <li>
+          <img class="store-product" src="./images/store-product-3-removebg-preview.png" alt="">
+          <img src="./images/stars.svg" width="110px" alt="">
+          <h3>Nature close tea</h3>
+          <p>Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum orem sit sed</p>
+          <span>$19.00</span>
+       </li>
+      </ul>
+
+    <a class="button button-dois" href="">Ver mais produtos</a>
+  </section>
+
+  <section class="testemonial-bg">
+    <div class="testemonial container">
+      <span class="testemonial-span">Avaliações</span>
+      <h2>O que os clientes dizem sobre o nosso chá</h2>
+    
+      <ul class="testemonial-ul">
+        <li>
+          <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+          <img src="./images/Person.jpg" alt="">
+          <h3>Nome do cliente</h3>
+          <span>Profissão</span>
+        </li>
+      </ul>
+  </div>
+  </section>
+
+  <section class="contato container" id="contato">
+    <h3 class="subtexto">Contato</h3>
+    <h2 class="titulo">Entre em contato</h2>
+    <span class="deco-line"></span>
+    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
+
+    <div class="contato-div">
+      <ul>
+        <li>
+          <img src="./images/email-svgrepo-com.svg" alt="" width="48px">
+          <a href="">info@example.com</a>
+          <a href="">support@example.com</a>
+        </li>
+
+        <li>
+          <img src="./images/telephone-receiver-material-svgrepo-com (1).svg" alt=""  width="48px">
+          <a href="">+012 345 67890</a>
+          <a href="">+012 345 67890</a>
+        </li>
+
+        <li>
+          <img src="./images/location-sign-svgrepo-com.svg" alt=""  width="48px">
+          <a href="">123 Street</a>
+          <a href="">New York, USA</a>
+        </li>
+      </ul>
+      
+    </div>
+  </section>
+
+
+
+  <footer class="footer-bg ">
+    <div class="footer container">
+      <div class="footer-c1">
+        <h2>Nosso trabalho</h2>
+        <a href=""> <img src="./images/location-sign-svgrepo-com.svg" width="18px" alt=""> 123 Street, New York, USA</a>
+        <a href=""> <img src="./images/telephone-receiver-material-svgrepo-com (1).svg" width="18px" alt=""> +012 345 67890</a>
+        <a href=""> <img src="./images/email-svgrepo-com.svg" width="18px" alt=""> +012 345 67890</a>
+      <div>
+        <a href=""><img src="./images/twitter-svgrepo-com.svg" width="42px" alt=""></a>
+        <a href=""><img src="./images/facebook-svgrepo-com.svg" width="42px" alt=""></a>
+        <a href=""><img src="./images/youtube-168-svgrepo-com.svg" width="42px" alt=""></a>
+        <a href=""><img src="./images/linkedin-round-svgrepo-com.svg" width="42px" alt=""></a>
+      </div>
+    </div>
+
+      <div class="footer-c1 footer-c2">
+        <h2>Links Rápidos</h2>
+        <a href=""> <img src="./images/arrow-right-bold-svgrepo-com.svg" width="18px" alt=""> Sobre nós</a>
+        <a href=""> <img src="./images/arrow-right-bold-svgrepo-com.svg" width="18px" alt=""> Nos contate</a>
+        <a href=""> <img src="./images/arrow-right-bold-svgrepo-com.svg" width="18px" alt=""> Nossos servicos</a>
+        <a href=""> <img src="./images/arrow-right-bold-svgrepo-com.svg" width="18px" alt=""> Termos e condicoes</a>
+        <a href=""> <img src="./images/arrow-right-bold-svgrepo-com.svg" width="18px" alt=""> Suporte</a>
+      </div>
+
+     <div class="footer-c1 footer-c3">
+      <h2>Horários</h2>
+      <p>Segunda - Sexta</p>
+      <h4>09:00 - 19:00</h4>
+
+      <p>Sabado</p>
+      <h4>09:00 - 12:00</h4>
+
+      <p>Domingo</p>
+      <h4>Fechado</h4>
+
+     </div> 
+     
+    <div class="footer-c1 footer-c4">
+      <h2>Notícias</h2>
+      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+      <input type="email" placeholder="Seu Email">
+  
+    </div>
+
+    
+    </div>
+
+    <div class="container direitos">
+      <p>© Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

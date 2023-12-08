@@ -1,0 +1,134 @@
+.produtos-bg {
+  background-color: #f6eeea;
+  margin-bottom: 64px;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 78px 0px;
+}
+
+.produtosp {
+  font-weight: 600;
+  color: #f0bca4;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.produtos h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #30252a;
+  margin-bottom: 32px;
+  max-width: 24ch;
+  text-align: center;
+}
+
+.deco-line {
+  width: 200px;
+  height: 2px;
+  background-color: #f0bca4;
+  margin-bottom: 36px;
+  position: relative;
+  display: inline-block;
+}
+
+.deco-line::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 5px solid #f6eeea;
+  background-color: black;
+  position: absolute;
+  top: -10px;
+  left: 90px;
+}
+
+.produtos-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-imagens {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  overflow-x: auto;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.slide-imagens li {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  cursor: pointer;
+}
+
+.slide-imagens li:hover {
+  margin-top: -18px;
+}
+
+.slide-imagens div {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0 24px;
+  position: relative;
+  top: -50px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-imagens div p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.slide-imagens div h3 {
+  margin-bottom: 8px;
+  font-family: "playfair display";
+  color: #f0bca4;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 770px) {
+  .slide-imagens {
+    flex-wrap: wrap;
+  }
+
+  .produtos h2 {
+    font-size: 2rem;
+    /* margin: 18px 8px; */
+  }
+  .produtos {
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .slide-imagens {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 470px) {
+  .produtos {
+    margin: 0px 20px;
+    padding: 32px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slide-imagens div {
+    margin: 0px;
+  }
+}
